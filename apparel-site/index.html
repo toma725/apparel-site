@@ -229,23 +229,100 @@
   <section id="size" class="section">
     <div class="wrap">
       <p class="eyebrow center">SIZE GUIDE</p>
-      <h2 class="section-title center">トップス参考サイズ</h2>
-      <p class="section-sub center">単位は cm ・ キャップ / トートバッグ / スカーフはフリーサイズです。</p>
+      <h2 class="section-title center">サイズガイド</h2>
+      <p class="section-sub center">単位は cm ／ 平置きの実寸です。製作の特性上、1〜2cm 程度の誤差はご容赦ください。</p>
 
-      <div class="table-wrap">
-        <table class="size-table">
-          <thead>
-            <tr>
-              <th>サイズ</th><th>着丈</th><th>身幅</th><th>肩幅</th><th>袖丈</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><th>S</th><td>65</td><td>49</td><td>42</td><td>19</td></tr>
-            <tr><th>M</th><td>69</td><td>52</td><td>46</td><td>20</td></tr>
-            <tr><th>L</th><td>73</td><td>55</td><td>50</td><td>22</td></tr>
-            <tr><th>XL</th><td>77</td><td>58</td><td>54</td><td>24</td></tr>
-          </tbody>
-        </table>
+      <div class="size-tabs" role="tablist">
+        <button class="size-tab is-active" data-panel="tops" type="button">トップス</button>
+        <button class="size-tab" data-panel="sweat" type="button">パーカー・スウェット</button>
+        <button class="size-tab" data-panel="pants" type="button">パンツ</button>
+        <button class="size-tab" data-panel="goods" type="button">雑貨・シューズ</button>
+      </div>
+
+      <!-- トップス -->
+      <div class="size-panel is-active" data-panel="tops">
+        <p class="table-cap">Tシャツ ・ ロンT（共通ボディ）</p>
+        <div class="table-wrap">
+          <table class="size-table">
+            <thead>
+              <tr><th>サイズ</th><th>着丈</th><th>身幅</th><th>肩幅</th><th>袖丈（半袖）</th><th>袖丈（長袖）</th></tr>
+            </thead>
+            <tbody>
+              <tr><th>S</th><td>65</td><td>49</td><td>42</td><td>19</td><td>—</td></tr>
+              <tr><th>M</th><td>69</td><td>52</td><td>46</td><td>20</td><td>58</td></tr>
+              <tr><th>L</th><td>73</td><td>55</td><td>50</td><td>22</td><td>60</td></tr>
+              <tr><th>XL</th><td>77</td><td>58</td><td>54</td><td>24</td><td>62</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">※ 半袖Tは S〜XL、ロンTは M〜XL 展開です。</p>
+      </div>
+
+      <!-- パーカー・スウェット -->
+      <div class="size-panel" data-panel="sweat">
+        <p class="table-cap">キャットイラストパーカー</p>
+        <div class="table-wrap">
+          <table class="size-table">
+            <thead>
+              <tr><th>サイズ</th><th>着丈</th><th>身幅</th><th>肩幅</th><th>袖丈</th></tr>
+            </thead>
+            <tbody>
+              <tr><th>M</th><td>68</td><td>58</td><td>54</td><td>58</td></tr>
+              <tr><th>L</th><td>72</td><td>61</td><td>57</td><td>60</td></tr>
+              <tr><th>XL</th><td>76</td><td>64</td><td>60</td><td>62</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-cap">オリジナルスウェット</p>
+        <div class="table-wrap">
+          <table class="size-table">
+            <thead>
+              <tr><th>サイズ</th><th>着丈</th><th>身幅</th><th>肩幅</th><th>袖丈</th></tr>
+            </thead>
+            <tbody>
+              <tr><th>M</th><td>66</td><td>56</td><td>52</td><td>58</td></tr>
+              <tr><th>L</th><td>70</td><td>59</td><td>55</td><td>60</td></tr>
+              <tr><th>XL</th><td>74</td><td>62</td><td>58</td><td>62</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">※ ゆったりとしたオーバーサイズシルエットです。</p>
+      </div>
+
+      <!-- パンツ -->
+      <div class="size-panel" data-panel="pants">
+        <p class="table-cap">スウェットパンツ</p>
+        <div class="table-wrap">
+          <table class="size-table">
+            <thead>
+              <tr><th>サイズ</th><th>ウエスト</th><th>股上</th><th>股下</th><th>わたり幅</th><th>裾幅</th></tr>
+            </thead>
+            <tbody>
+              <tr><th>M</th><td>34</td><td>30</td><td>66</td><td>32</td><td>16</td></tr>
+              <tr><th>L</th><td>36</td><td>31</td><td>68</td><td>33</td><td>17</td></tr>
+              <tr><th>XL</th><td>38</td><td>32</td><td>70</td><td>34</td><td>18</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">※ ウエストは平置き実寸です。ゴム＋ドローコードで伸縮します。</p>
+      </div>
+
+      <!-- 雑貨・シューズ -->
+      <div class="size-panel" data-panel="goods">
+        <div class="table-wrap">
+          <table class="size-table size-table--goods">
+            <thead>
+              <tr><th>アイテム</th><th>サイズ ・ 寸法</th></tr>
+            </thead>
+            <tbody>
+              <tr><th>刺繍キャップ</th><td>頭囲 約56〜60cm（アジャスターで調整可）</td></tr>
+              <tr><th>トートバッグ</th><td>約 W36 × H37 × マチ11cm ／ 持ち手 約60cm</td></tr>
+              <tr><th>猫柄スカーフ</th><td>約 53 × 53cm</td></tr>
+              <tr><th>猫プリントソックス</th><td>対応サイズ 約23〜26cm</td></tr>
+              <tr><th>スニーカー</th><td>23.0〜27.0cm（0.5cm 刻み）</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </section>
@@ -309,6 +386,21 @@
       <p class="copyright">© 2026 flow — original design apparel</p>
     </div>
   </footer>
+
+  <script>
+    // サイズガイドのタブ切り替え
+    document.querySelectorAll('.size-tab').forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        var id = tab.dataset.panel;
+        document.querySelectorAll('.size-tab').forEach(function (t) {
+          t.classList.toggle('is-active', t === tab);
+        });
+        document.querySelectorAll('.size-panel').forEach(function (p) {
+          p.classList.toggle('is-active', p.dataset.panel === id);
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
