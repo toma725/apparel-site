@@ -128,18 +128,6 @@ img { max-width: 100%; display: block; }
   font-size: 22px; color: var(--ink); margin-top: 6px; font-weight: 600;
 }
 
-/* 画像のない商品はスウォッチで表現 */
-.swatch { display: flex; align-items: center; justify-content: center; }
-.swatch-label {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px; letter-spacing: 2px; text-align: center;
-  color: rgba(74,64,56,.55); line-height: 1.3;
-}
-.swatch-tee   { background: linear-gradient(135deg,#efe7db,#e2d6c2); }
-.swatch-sweat { background: linear-gradient(135deg,#e6ddd0,#d3c7b3); }
-.swatch-cap   { background: linear-gradient(135deg,#efe4d3,#dccdb4); }
-.swatch-tote  { background: linear-gradient(135deg,#f0e9dc,#e0d4bf); }
-
 /* ===== ストーリー ===== */
 .story { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
 .story-img img { width: 100%; border-radius: 20px; box-shadow: 0 24px 48px -26px rgba(120,100,75,.5); }
