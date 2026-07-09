@@ -1,0 +1,90 @@
+
+/* ===== 基本設定 ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --ink: #1a1a1a;
+  --paper: #faf9f7;
+  --line: #e3e0da;
+  --muted: #8a857d;
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+/* ===== ヘッダー ===== */
+.site-header {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(250,249,247,.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.header-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.brand { font-weight: 800; letter-spacing: 2px; font-size: 20px; }
+.brand span { font-weight: 300; }
+.nav a { margin-left: 28px; font-size: 13px; letter-spacing: 1.5px; color: var(--muted); }
+.nav a:hover { color: var(--ink); }
+
+/* ===== ヒーロー ===== */
+.hero { padding: 120px 0; border-bottom: 1px solid var(--line); }
+.hero-kicker { font-size: 13px; letter-spacing: 4px; color: var(--muted); margin-bottom: 20px; }
+.hero-title { font-size: clamp(36px, 6vw, 64px); line-height: 1.2; font-weight: 800; letter-spacing: 1px; }
+.hero-lead { margin: 24px 0 36px; color: #555; max-width: 460px; }
+.btn {
+  display: inline-block; padding: 14px 32px;
+  background: var(--ink); color: var(--paper);
+  font-size: 14px; letter-spacing: 2px; border-radius: 999px;
+  transition: opacity .2s;
+}
+.btn:hover { opacity: .8; }
+
+/* ===== セクション共通 ===== */
+.section { padding: 96px 0; }
+.section-alt { background: #f2f0eb; }
+.section-title { font-size: 14px; letter-spacing: 4px; color: var(--muted); margin-bottom: 8px; }
+.section-sub { font-size: 12px; color: var(--muted); margin-bottom: 40px; }
+
+/* ===== 商品グリッド ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 24px;
+}
+.card-img {
+  aspect-ratio: 3 / 4;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  transition: transform .25s;
+}
+.card:hover .card-img { transform: translateY(-4px); }
+.card-name { font-size: 15px; font-weight: 600; }
+.card-price { font-size: 14px; color: var(--muted); margin-top: 2px; }
+
+/* ===== アバウト ===== */
+.about p { max-width: 560px; color: #444; }
+
+/* ===== フッター ===== */
+.site-footer { padding: 80px 0 48px; border-top: 1px solid var(--line); }
+.footer-lead { color: #555; margin-bottom: 24px; }
+.links a {
+  display: inline-block; margin-right: 20px; padding: 10px 24px;
+  border: 1px solid var(--ink); border-radius: 999px; font-size: 14px; letter-spacing: 1px;
+  transition: background .2s, color .2s;
+}
+.links a:hover { background: var(--ink); color: var(--paper); }
+.copyright { margin-top: 48px; font-size: 12px; color: var(--muted); }
+
+/* ===== スマホ対応 ===== */
+@media (max-width: 720px) {
+  .hero { padding: 72px 0; }
+  .section { padding: 64px 0; }
+  .grid { grid-template-columns: repeat(2, 1fr); gap: 24px 16px; }
+  .nav a { margin-left: 16px; }
+}
