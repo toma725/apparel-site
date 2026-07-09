@@ -140,6 +140,24 @@ img { max-width: 100%; display: block; }
 .swatch-cap   { background: linear-gradient(135deg,#efe4d3,#dccdb4); }
 .swatch-tote  { background: linear-gradient(135deg,#f0e9dc,#e0d4bf); }
 
+/* ===== ストーリー ===== */
+.story { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.story-img img { width: 100%; border-radius: 20px; box-shadow: 0 24px 48px -26px rgba(120,100,75,.5); }
+.story-title {
+  font-family: 'Zen Maru Gothic', serif; font-weight: 700;
+  font-size: clamp(26px, 4vw, 38px); line-height: 1.4; color: var(--ink); margin-bottom: 20px;
+}
+.story-text p { color: #6e6155; font-size: 15px; margin-bottom: 16px; max-width: 460px; }
+
+/* ===== 事業者情報 ===== */
+.info-list { max-width: 680px; margin: 0 auto; }
+.info-row {
+  display: grid; grid-template-columns: 160px 1fr; gap: 16px;
+  padding: 18px 8px; border-bottom: 1px solid var(--sand); align-items: baseline;
+}
+.info-row dt { font-weight: 700; font-size: 14px; color: var(--ink); }
+.info-row dd { font-size: 15px; color: #6e6155; }
+
 /* ===== サイズ表 ===== */
 .table-wrap { overflow-x: auto; max-width: 720px; margin: 0 auto; }
 .size-table {
@@ -180,10 +198,14 @@ img { max-width: 100%; display: block; }
   .grid { grid-template-columns: repeat(2, 1fr); }
   .feature-card { grid-column: span 2; }
   .feature-card .card-img { aspect-ratio: 4 / 5; }
+  .story { grid-template-columns: 1fr; gap: 32px; }
+  .story-img { max-width: 460px; margin: 0 auto; }
+  .story-text p { max-width: none; }
 }
 @media (max-width: 640px) {
   .section { padding: 68px 0; }
   .features { grid-template-columns: 1fr; }
-  .nav a { margin-left: 14px; letter-spacing: 1px; }
-  .brand { font-size: 26px; }
+  .nav a { margin-left: 12px; letter-spacing: .5px; font-size: 11px; }
+  .brand { font-size: 24px; }
+  .info-row { grid-template-columns: 1fr; gap: 2px; padding: 14px 4px; }
 }
